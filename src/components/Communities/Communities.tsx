@@ -48,7 +48,7 @@ const Communities = () => {
   ];
 
   // Function to render star ratings
-  const renderStars = (rating) => {
+  const renderStars = (rating: number) => {
     const stars = [];
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 >= 0.5;
