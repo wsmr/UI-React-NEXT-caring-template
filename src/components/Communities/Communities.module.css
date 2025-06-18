@@ -1,0 +1,177 @@
+.communities {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.communitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.communityCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.communityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.communityImage {
+  height: 200px;
+  overflow: hidden;
+}
+
+.communityImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.verifiedBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--accent-color);
+  color: var(--light-text);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.communityInfo {
+  padding: 20px;
+  position: relative;
+}
+
+.communityInfo h3 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.address {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: flex;
+  margin-right: 5px;
+}
+
+.star {
+  color: #ffc107;
+  margin-right: 2px;
+}
+
+.emptyStar {
+  color: #e0e0e0;
+  margin-right: 2px;
+}
+
+.reviewCount {
+  color: var(--gray-text);
+  font-size: 0.8rem;
+}
+
+.price {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.communityButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.pricingBtn {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.pricingBtn:hover {
+  background-color: #e06a1e;
+}
+
+.learnMore {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.learnMore:hover {
+  background-color: rgba(244, 125, 49, 0.1);
+}
+
+.awardBadge {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.awardBadge img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .communitiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .communities {
+    padding: 60px 0;
+  }
+  
+  .communitiesGrid {
+    grid-template-columns: 1fr;
+  }
+}

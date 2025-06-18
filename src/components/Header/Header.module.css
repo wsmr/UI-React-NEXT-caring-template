@@ -1,0 +1,83 @@
+.header {
+  background-color: #fff;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 40px;
+  /* The actual logo is a teal/green caring.com logo */
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phoneNumber {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.contactBtn {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.contactBtn:hover {
+  background-color: #e06a1e;
+}
+
+.mobileMenuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.mobileMenuToggle span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--dark-text);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .phoneNumber {
+    display: none;
+  }
+  
+  .mobileMenuToggle {
+    display: flex;
+  }
+}

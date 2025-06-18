@@ -1,0 +1,121 @@
+.hero {
+  background-color: var(--light-bg);
+  padding: 60px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.heroText {
+  flex: 1;
+}
+
+.heroText h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.heroImage {
+  flex: 1;
+  text-align: right;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.searchSection {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.searchSection h2 {
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto 15px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.searchBtn {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  border-radius: 0 4px 4px 0;
+  padding: 12px 25px;
+  font-weight: 600;
+}
+
+.searchBtn:hover {
+  background-color: #e06a1e;
+}
+
+.speakAdvisor {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+}
+
+.speakAdvisor a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .heroContent {
+    flex-direction: column;
+  }
+  
+  .heroText, .heroImage {
+    flex: none;
+    width: 100%;
+  }
+  
+  .heroImage {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+  }
+  
+  .searchBox {
+    flex-direction: column;
+  }
+  
+  .searchInput {
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .searchBtn {
+    border-radius: 4px;
+  }
+}
