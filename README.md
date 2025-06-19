@@ -2,6 +2,13 @@
 
 This project is a pixel-perfect frontend clone of Caring.com, replicating only the visual appearance and layout of the site without any backend functionality or real content.
 
+## Demo
+
+Here's a quick look at the web application:
+
+![Demo](public/image.png)
+
+
 ## Technologies Used
 
 ### Core Framework
